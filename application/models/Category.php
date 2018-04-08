@@ -19,7 +19,7 @@ class Category extends CSV_Model
 		$allowed = ['Protein', 'Topping', 'Grain', 'Veggie', 'Sauce'];
 		if (!in_array($value, $allowed))
 		throw new Exception('Category must be a Protein, Topping, Grain, Veggie or Sauce');
-		$this->category = $value;
+		$this->name = $value;
 		return $this;
 	}
 }
